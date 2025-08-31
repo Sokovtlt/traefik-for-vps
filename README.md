@@ -65,8 +65,8 @@ The configuration is designed to make it easy to deploy Django, Nginx, or any ot
 
 To add a new container (for example, an Nginx site or Django app), just connect it to the same proxynet network and add Traefik labels.
 
-    Example:
-    ```
+Example:
+    
     services:
     nginx:
     image: nginx:latest
@@ -81,7 +81,7 @@ To add a new container (for example, an Nginx site or Django app), just connect 
     networks:
       proxynet:
         external: true
-    ```
+    
 
 📊 Traefik Dashboard
 
